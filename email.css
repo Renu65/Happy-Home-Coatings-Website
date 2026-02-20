@@ -1,0 +1,80 @@
+body{
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+}
+
+/* main box */
+.email-box{
+  max-width: 500px;
+  background: #fff;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* heading */
+.main-heading{
+  text-align: center;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+/* text */
+.highlight{
+  text-align: center;
+
+  font-size: 17px;
+  font-weight: 700;              
+  letter-spacing: 0.5px;         
+
+  color: #2c2c2c;
+
+  max-width: 720px;
+  margin: 25px auto 35px;
+  padding: 16px 24px;
+  line-height: 1.8;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+
+/* inputs */
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* button */
+button{
+  width: 100%;
+  padding: 10px;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  background: #e68900;
+}
+
+/* back */
+.back{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #ff9800;
+  font-weight: 600;
+}
+

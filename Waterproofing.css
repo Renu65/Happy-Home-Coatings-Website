@@ -1,0 +1,215 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body{
+  background: #fafafa;
+  color: #333;
+}
+
+/* =========================
+   MAIN HEADING
+========================= */
+.main-heading{
+  text-align: center;
+  font-size: 46px;
+  font-weight: 800;
+  color: #ff5722;
+  margin: 50px 0 30px;
+
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+
+  animation: glowBlink 3.5s infinite;
+}
+
+.main-heading::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 5px;
+  border-radius: 6px;
+  background: linear-gradient(90deg,#ff9800,#ff5722);
+}
+
+@keyframes glowBlink{
+  0%{ text-shadow: none; }
+  50%{
+    text-shadow:
+      0 0 8px rgba(255,152,0,0.6),
+      0 0 16px rgba(255,87,34,0.5);
+  }
+  100%{ text-shadow: none; }
+}
+
+/* =========================
+   HIGHLIGHT PARAGRAPH
+========================= */
+p.highlight{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+
+  max-width: 850px;
+  margin: 20px auto 40px;
+  padding: 14px 22px;
+  line-height: 1.7;
+
+  background: linear-gradient(90deg,#fff7e6,#ffffff);
+  border-left: 5px solid #ff9800;
+  border-radius: 6px;
+
+  transition: all 0.35s ease;
+}
+
+p.highlight:hover{
+  background: linear-gradient(90deg,#fff1cc,#ffffff);
+  border-left-color: #ff5722;
+  color: #222;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   SERVICE SECTION
+========================= */
+.service-box{
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+/* =========================
+   SERVICE CARD
+========================= */
+.service-card{
+  width: 260px;
+  background: #fff;
+  padding: 18px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.service-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   SERVICE CARD IMAGE
+========================= */
+.service-card img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* =========================
+   SERVICE CARD H3
+========================= */
+.service-card h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff5722;
+  margin: 12px 0 10px;
+  text-align: center;
+  position: relative;
+}
+
+.service-card h3::after{
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg,#ff9800,#ff5722);
+  display: block;
+  margin: 6px auto 0;
+  border-radius: 3px;
+}
+
+/* =========================
+   SERVICE CARD P
+========================= */
+.service-card p{
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 6px;
+  padding: 8px 10px;
+  background: #fff7e6;
+  border-radius: 6px;
+}
+
+/* =========================
+   EXPERIENCE CARDS
+========================= */
+.experience-box{
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.experience-card{
+  width: 240px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.4s ease;
+}
+
+.experience-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.experience-card h2{
+  font-size: 36px;
+  color: #ff9800;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+.back{
+  display: inline-block;
+  margin: 40px auto;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  border-radius: 20px;
+  transition: 0.3s ease;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back:hover{
+  background: #ff9800;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(255,152,0,0.4);
+}

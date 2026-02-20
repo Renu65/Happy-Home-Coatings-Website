@@ -1,0 +1,164 @@
+
+/* =========================
+   COMPLETED PROJECTS CSS
+========================= */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: #ffffff;
+}
+
+/* Main Heading */
+.main-heading {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.main-heading::after {
+  content: "";
+  width: 65%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff9800, #ffc107);
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* Highlight Paragraph */
+p.highlight {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 14px 22px;
+  line-height: 1.7;
+  background: linear-gradient(90deg, #fff7e6, #ffffff);
+  border-left: 5px solid #ff9800;
+  border-radius: 6px;
+}
+
+/* Projects Layout */
+.projects-container {
+  max-width: 1150px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+  background: #fff;
+  padding: 26px 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-top: 5px solid #ff9800;
+}
+
+/* Card Heading */
+.project-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.project-card h3::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(#ff9800, #ffc107);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+
+/* Card Paragraph */
+.project-card p {
+  font-size: 15.5px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Status Badge */
+.status {
+  display: inline-block;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  letter-spacing: 0.4px;
+}
+
+.status.completed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .main-heading {
+    font-size: 32px;
+  }
+
+  p.highlight {
+    font-size: 16px;
+  }
+}
+
+
+/* back to home */
+.back{
+  display: inline-block;      
+  margin: 30px auto;          
+  padding: 6px 14px;          
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+  color: #ff9800;
+
+  border: 2px solid #ff9800;
+  border-radius: 20px;
+
+  transition: 0.3s ease;
+}
+
+
+.back{
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+/* hover */
+.back:hover{
+  background: #ff9800;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(255,152,0,0.4);
+}
+
+
+
+

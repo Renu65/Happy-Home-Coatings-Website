@@ -1,0 +1,156 @@
+/* experience layout */
+.experience-box{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.experience-card{
+  width: 240px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* numbers */
+.experience-card h2{
+  font-size: 36px;
+  color: #ff9800;
+  margin-bottom: 8px;
+}
+
+/* description text */
+.experience-card p{
+  background: #fff3cd;
+  padding: 8px;
+  margin-top: 8px;
+}
+.experience-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+/* heading experiance */
+
+.main-heading{
+  text-align: center;
+  font-size: 46px;
+  font-weight: 800;
+  color: #ff5722;
+
+  margin: 50px 0 30px;
+
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* auto glow animation */
+  animation: glowBlink 3.5s infinite;
+}
+
+/* underline highlight – always visible */
+.main-heading::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+
+  width: 90px;
+  height: 5px;
+  border-radius: 6px;
+
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+}
+
+/* soft blinking glow */
+@keyframes glowBlink{
+  0%{
+    text-shadow: none;
+  }
+  50%{
+    text-shadow:
+      0 0 8px rgba(255,152,0,0.6),
+      0 0 16px rgba(255,87,34,0.5);
+  }
+  100%{
+    text-shadow: none;
+  }
+}
+
+
+/* p text heighlight */
+p.highlight{
+  text-align: center;              
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+
+  max-width: 800px;
+  margin: 20px auto;
+
+  padding: 12px 18px;
+  position: relative;
+  cursor: pointer;
+
+  transition: 0.4s ease;
+}
+
+/* underline highlight */
+p.highlight::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg,#ff9800,#ff5722);
+
+  transform: translateX(-50%);
+  transition: 0.4s ease;
+}
+
+/* hover effect */
+p.highlight:hover{
+  color: #ff5722;
+  letter-spacing: 1px;
+}
+p.highlight:hover::after{
+  width: 100%;
+}
+/* back to home */
+.back{
+  display: inline-block;      
+  margin: 30px auto;          
+  padding: 6px 14px;          
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+  color: #ff9800;
+
+  border: 2px solid #ff9800;
+  border-radius: 20px;
+
+  transition: 0.3s ease;
+}
+
+
+.back{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* hover */
+.back:hover{
+  background: #ff9800;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(255,152,0,0.4);
+}

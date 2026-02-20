@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Highlight paragraph */
+p.highlight {
+  max-width: 850px;
+  margin: auto;
+  padding: 14px 22px;
+  font-size: 18px;
+  line-height: 1.7;
+  background: linear-gradient(90deg, #fff7e6, #ffffff);
+  border-left: 5px solid #ff9800;
+  border-radius: 6px;
+  color: #444;
+}
+
+/* Projects layout */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px 60px;
+}
+
+/* Project card */
+.project-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Card heading */
+.project-card h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #222;
+}
+
+/* Card text */
+.project-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+/* Status badge */
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.status.ongoing {
+  background: #fff3e0;
+  color: #ef6c00;
+  border: 1px solid #ff9800;
+}
+
+/* back to home */
+
+.back{
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* button */
+.back a{
+  display: inline-block;
+  padding: 8px 18px;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  border-radius: 22px;
+
+  transition: 0.3s ease;
+}
+
+/* hover */
+.back a:hover{
+  background: #ff9800;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(255,152,0,0.4);
+}
+

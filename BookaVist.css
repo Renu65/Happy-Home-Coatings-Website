@@ -1,0 +1,85 @@
+body{
+  font-family: "Segoe UI", sans-serif;
+  background: #f7f7f7;
+}
+
+/* heading */
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+
+  color: #2c2c2c;
+  font-family: "Segoe UI", sans-serif;
+
+  margin: 40px auto 25px;
+  width: fit-content;
+
+  padding: 12px 30px;
+
+  background: linear-gradient(90deg, #fff1d6, #ffffff);
+  border-bottom: 5px solid #ff9800;
+  border-radius: 6px;
+
+  letter-spacing: 1px;
+}
+
+
+/* form box */
+.visit-form{
+  max-width: 420px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* inputs */
+.visit-form input,
+.visit-form textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* button */
+.visit-form button{
+  width: 100%;
+  padding: 10px;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* back button */
+.back{
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #ff9800;
+  font-weight: 600;
+  border: 2px solid #ff9800;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+.back:hover{
+  background: #ff9800;
+  color: #fff;
+}
+
+
+

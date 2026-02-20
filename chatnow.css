@@ -1,0 +1,123 @@
+body{
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f5f5;
+}
+
+/* main box */
+.chat-container{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* heading */
+.main-heading{
+  text-align: center;
+  font-size: 32px;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+/* chat card */
+.chat-card{
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(135deg,#fff3e0,#ffffff);
+  border-left: 5px solid #ff9800;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* card heading */
+.chat-card h3{
+  text-align: center;
+  color: #ff9800;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* inputs */
+.chat-card input,
+.chat-card textarea{
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.chat-card textarea{
+  resize: none;
+  height: 90px;
+}
+
+/* button */
+.chat-card button{
+  width: 100%;
+  padding: 10px;
+  background: #ff9800;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chat-card button:hover{
+  background: #e68900;
+  box-shadow: 0 6px 15px rgba(255,152,0,0.4);
+}
+
+/* back button */
+.back{
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #ff9800;
+  font-weight: 600;
+  border: 2px solid #ff9800;
+  padding: 6px 14px;
+  border-radius: 20px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+
+.back:hover{
+  background: #ff9800;
+  color: #fff;
+}
+/* text */
+.highlight{
+  text-align: center;
+
+  font-size: 17px;
+  font-weight: 700;              
+  letter-spacing: 0.5px;         
+
+  color: #2c2c2c;
+
+  max-width: 720px;
+  margin: 25px auto 35px;
+  padding: 16px 24px;
+  line-height: 1.8;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+h3{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
